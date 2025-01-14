@@ -5,3 +5,5 @@ pytorch-candle >= 0.0.16
 tqdm >= 4.62.3
 numpy >= 1.21.2
 matplotlib >= 3.4.3
+streamlit >= 1.0.0
+pillow >= 8.3.2

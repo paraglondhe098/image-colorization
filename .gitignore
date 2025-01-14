@@ -3,3 +3,5 @@ results/
 .idea/
 .ipynb_checkpoints/
 .env
+ignored/
+*__pycache__*
