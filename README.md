@@ -1,4 +1,4 @@
-# Image Colorization Project
+# Image Colorization using GANs (Advanced computer vision project)
 This project provides an implementation of Image colorization using GANs (Generative Adversarial Networks), specifically using a U-Net architecture 
 for the generator and a PatchGAN for the discriminator. The project is constructed in Python with [PyTorch](https://pytorch.org/docs/stable/index.html) as the deep learning framework, and 
 [PyTorch-Candle](https://github.com/paraglondhe098/pytorch-candle) for efficient training process.
