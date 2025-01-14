@@ -52,7 +52,7 @@ In order to run the project, you need to have Python installed on your system. Y
 pip install -r requirements.txt
 ```
 
-The training code is contained in the [`notebook.ipynb`](ignored/notebook_old.ipynb) Jupyter notebook file. You can run the notebook in a Jupyter notebook environment or on cloud platforms like Google Colab.
+The training code is contained in the [`notebook.ipynb`](notebook.ipynb) Jupyter notebook file. You can run the notebook in a Jupyter notebook environment or on cloud platforms like Google Colab.
 The implementation on Kaggle is available here: [Image Colorization on Kaggle](https://www.kaggle.com/code/paraglondhe/image-colorization-unet-gan)
 
 ### Using the Web Interface
