@@ -4,6 +4,8 @@ This project provides an implementation of Image colorization using GANs (Genera
 for the generator and a PatchCNN for the discriminator. The project is constructed in Python with [PyTorch](https://pytorch.org/docs/stable/index.html) as the deep learning framework, and 
 [PyTorch-Candle](https://github.com/paraglondhe098/pytorch-candle) for efficient training process.
 
+![Example](style/Screenshot 2025-01-14 183759.png "example image")
+
 ## Project structure
 Following are the main components:
 - `notebook.ipynb`: This is the Jupyter notebook file containing the model training implementation and execution steps.
