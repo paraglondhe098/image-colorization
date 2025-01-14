@@ -1,0 +1,7 @@
+torch >= 1.10.0
+# better to install from https://pytorch.org/get-started/locally/
+torchvision >= 0.11.1
+pytorch-candle >= 0.0.16
+tqdm >= 4.62.3
+numpy >= 1.21.2
+matplotlib >= 3.4.3
