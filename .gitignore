@@ -1,7 +1,15 @@
+# Ignore directories
 data/
 results/
+ignored/
 .idea/
 .ipynb_checkpoints/
+
+# Ignore environment files
 .env
-ignored/
-*__pycache__*
+
+# Ignore __pycache__ directories everywhere
+**/__pycache__/
+
+# Optional: Ignore specific file types (e.g., compiled Python files)
+*.pyc
