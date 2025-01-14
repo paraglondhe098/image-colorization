@@ -70,6 +70,13 @@ streamlit run app.py
 4. Upload a grayscale image and click the "Colorize Image" button
 5. Download the colorized result using the download button
 
+### Results 
+#### (After 45 epochs)
+![Example](style/horizontal_res.png)
+
+### Inspired from article: [Colorizing black & white images with U-Net and conditional GAN — A Tutorial](https://towardsdatascience.com/colorizing-black-white-images-with-u-net-and-conditional-gan-a-tutorial-81b2df111cd8)
+by *Moein Shariatnia*
+
 ## Future Objectives
 The project's current configuration parameters, such as the number of epochs and batch size, are tailored for learning and experimentation.
 These parameters may require further tuning based on the specific dataset and computational resources available. To achieve superior results, 
