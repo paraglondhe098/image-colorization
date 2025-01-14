@@ -18,7 +18,7 @@ class ImageColorizer:
         self.trf = ImageTransformer()
 
     def colorize(self, original: Image.Image) -> Tuple[Image.Image]:
-        img = np.array(self.resize(original))
+        img = np.array(self.resize(original.convert("RGB")))
         L, _ = self.trf.transform(img)
 
         L = L.unsqueeze(0).to(self.device)
