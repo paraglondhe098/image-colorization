@@ -86,10 +86,12 @@ class PatchDiscriminator(nn.Module):
 
 class ImageColorizationModel(nn.Module):
     def __init__(self, generator,
-                 discriminator,):
+                 discriminator,
+                 weight_init_method="norm",
+                 weight_init_gain=0.02 ):
         super().__init__()
-        self.gen = self.init_weights(generator)
-        self.disc = self.init_weights(discriminator)
+        self.gen = self.init_weights(generator, weight_init_method, weight_init_gain)
+        self.disc = self.init_weights(discriminator, weight_init_method, weight_init_gain)
 
     @staticmethod
     def init_weights(net, init='norm', gain=0.02):
@@ -108,6 +110,8 @@ class ImageColorizationModel(nn.Module):
             elif 'BatchNorm2d' in classname:
                 nn.init.normal_(m.weight.data, 1., gain)
                 nn.init.constant_(m.bias.data, 0.)
+
         net.apply(init_func)
-        print(f"model initialized with {init} initialization")
+        # print(f"model initialized with {init} initialization")
         return net
+

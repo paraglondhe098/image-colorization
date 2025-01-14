@@ -12,3 +12,4 @@ class GANLoss(nn.Module):
     def __call__(self, preds, is_real):
         labels = self.real_label.expand_as(preds) if is_real else self.fake_label.expand_as(preds)
         return self.loss(preds, labels)
+
